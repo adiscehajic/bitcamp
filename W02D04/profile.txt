@@ -1,0 +1,4 @@
+Name:            Adis
+Email:           adis@gmail.com
+Favorite Color:  blue
+Yearly Income:   $50,000.00
