@@ -1,0 +1,7 @@
+Napisati klasu koja opisuje temperaturu napolju. Temperatura je spremljena u jedan atribut, u °C.
+	- Napisati konstruktor koji inicijalizira vrijednost temperature
+	- Napisati metodu getTemperatureInC() koja vraća temperaturu u Celzijusima
+	- Napisati metodu getTemperatureInK() koja vraća temperaturu u Kelvinima
+	- Napisati metodu getTemperatureInF() koja vraća temperaturu u Farenhajtim
+	- Napisati metodu setTemperature(int) koja postavlja vrijednost temperature
+	- Napisati javadoc za sve metode

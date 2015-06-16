@@ -1,0 +1,12 @@
+Napisati klasu koja opisuje čašu. Čaša prima samo jednu vrstu tečnosti. Dati objekat opisuju tri atributa, vrsta 
+tečnosti, količinu tečnosti i maksimalnu količinu tečnosti.
+	- Napisati konstruktor koji inicijalizira količinu na 0, vrstu na null i max. količinu na datu vrijednost
+	- Napisati metodu getTypeOfLiquid() koja vraća tip tečnosti koji se nalazi u čaši
+	- Napisati metodu getMaxCapacity() koja vraća maksimalni kapacitet čaše
+	- Napisati metodu getCurrentCapacity() koja vraća trenutni kapacitet čaše
+	- Napisati metodu addLiquid(String, int) koja dodaje neku količinu nekog tipa tečnosti u čašu
+		- Ukoliko čaša sadrži tečnost koja nije kao data onda ništa ne raditi
+		- Ukoliko čaša sadrži tečnost koja je i data onda povećati za datu količinu
+			- Svaki višak tečnosti se „prelije“ i trenutni kapacitet bude isti kao i maksimalni
+	- Napisati metodu emptyGlass() koja „prospe“ svu tečnost iz čaše 
+	- Napisati javadoc za sve metode
