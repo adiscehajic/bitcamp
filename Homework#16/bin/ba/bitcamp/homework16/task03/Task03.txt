@@ -1,0 +1,32 @@
+Napisati klasu koja opisuje jedan printer. Printer ima sljedeće atribute:
+	- Ime printera
+	- Količina papira u printeru
+	- Količina tinte u printeru
+	- Ukupno isprintano stranica
+
+Printer ima sljedeće konstruktore:
+	- Prazni konstruktor koji inicijalizira ime na „DefaultPrinter“, a količinu papira i tinte na 0
+	- Konstruktor koji inicijalizira ime na dati parametar, a količinu papira i tinte na 0
+		- Oba konstruktora inicijaliziraju ukupno isprintano stranica na 0
+
+Printer ima sljedeće metode:
+	- Metoda koja vraća da li ima tinte (true/false)
+	- Metoda koja vraća da li ima papira (true/false)
+	- Metoda koja vraća koliko je ukupno isprintano stranica od tog printera
+	- Metoda koja dodaje papira u printer (void metoda)
+		- Uzeti u obzir da se ne može imati više od 100 papira u printeru
+	- Metoda koja napuni tintu na max. (void metoda)
+		- Maksimalno tinte je 100
+	- Metoda koja „printa“ stranice papira (void metoda)
+		- Metoda prima int parametar koji predstavlja koliko stranica isprintati
+		- Za svaku isprintanu stranicu oduzeti jedan papir iz printera
+		- Za svaku isprintanu stranicu oduzeti tri iz atributa tinta
+		- Ukoliko nema papira ili ako nema tinte onda ne treba printati
+
+Pored toga Printer klasa sadrži sljedeće:
+	- toString metodu koja printa ime printera i trenutno stanje
+		- Stanje može biti „Ready“, „No ink“, „No paper“, „No ink nor paper“
+	- static varijablu koja bilježi koliko ukupno stranica je isprintano
+		- Napisati i metodu koja vraća vrijednost te varijable
+
+Napisati malu demonstraciju rada vaše klase u main metodi.
