@@ -1,0 +1,19 @@
+package ba.bitcamp.w05d04.exercises.tasks;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		PersonalComputer pc = new PersonalComputer();
+		
+		pc.setSystemName("Linux");
+		pc.setRam(4);
+		pc.setPrice(1500);
+		
+		System.out.println(pc);
+		
+		
+	}
+	
+	
+}

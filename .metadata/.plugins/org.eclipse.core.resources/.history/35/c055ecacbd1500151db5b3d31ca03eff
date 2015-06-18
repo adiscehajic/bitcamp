@@ -1,0 +1,15 @@
+package ba.bitcamp.w05d04.exercises.tasks;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		DesktopComputer dc = new DesktopComputer();
+		
+
+		
+		
+	}
+	
+	
+}

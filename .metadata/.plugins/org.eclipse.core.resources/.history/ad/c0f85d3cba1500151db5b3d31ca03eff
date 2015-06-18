@@ -1,0 +1,39 @@
+package ba.bitcamp.w05d04.exercises.tasks;
+
+public class PocketPC {
+
+	private Boolean hasTouchInterface;
+	private Boolean hasSIMCardSlot;
+	private Boolean hasMicroSDCardSlot;
+
+	/*
+	 * Get methods
+	 */
+	public Boolean getHasTouchInterface() {
+		return hasTouchInterface;
+	}
+
+	public void setHasTouchInterface(Boolean hasTouchInterface) {
+		this.hasTouchInterface = hasTouchInterface;
+	}
+
+	public Boolean getHasSIMCardSlot() {
+		return hasSIMCardSlot;
+	}
+
+	/*
+	 * Set methods
+	 */
+	public void setHasSIMCardSlot(Boolean hasSIMCardSlot) {
+		this.hasSIMCardSlot = hasSIMCardSlot;
+	}
+
+	public Boolean getHasMicroSDCardSlot() {
+		return hasMicroSDCardSlot;
+	}
+
+	public void setHasMicroSDCardSlot(Boolean hasMicroSDCardSlot) {
+		this.hasMicroSDCardSlot = hasMicroSDCardSlot;
+	}
+
+}

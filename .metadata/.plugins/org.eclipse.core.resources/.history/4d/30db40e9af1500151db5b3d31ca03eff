@@ -1,0 +1,25 @@
+package ba.bitcamp.w05d04.exercises.inheritance;
+
+public class Main {
+
+	
+	public static void main(String[] args) {
+		Building b = new Building();
+		b.area = 1000;
+		b.location = "Hrasnicka cesta 17";
+		b.population = 1000;
+		
+		University u = new University();
+		u.name = "IUS";
+		u.isItPublic = false;
+		u.numberOIfFaculties = 3;
+		u.numberOfStaff = 200;
+		
+		
+		
+	}
+	
+	
+	
+	
+}

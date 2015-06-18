@@ -1,0 +1,9 @@
+package ba.bitcamp.w05d04.exercises.tasks;
+
+public class PersonalComputer {
+
+	private String systemName;
+	private Integer ram;
+	private Integer price;
+
+}

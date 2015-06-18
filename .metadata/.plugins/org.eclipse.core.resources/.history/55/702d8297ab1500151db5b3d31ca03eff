@@ -1,0 +1,7 @@
+package ba.bitcamp.w05d04.lectures.inheritance.nonheritance;
+
+public class KopnenoVozilo {
+
+	private String registracija
+	
+}

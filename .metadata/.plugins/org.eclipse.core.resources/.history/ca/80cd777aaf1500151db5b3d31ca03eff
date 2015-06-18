@@ -1,0 +1,10 @@
+package ba.bitcamp.w05d04.exercises.inheritance;
+
+public class University {
+
+	public String name;
+	public Boolean isItPublic;
+	public Integer numberOfStaff;
+	public Integer numberOIfFaculties;
+	
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.inheritance.University"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.inheritance.Building"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.tasks.StationaryComputer"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.tasks.PortableComputer"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.tasks.PersonalComputer"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.tasks.DesktopComputer"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.tasks.Laptop"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.tasks.PocketPC"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.tasks.Workstation"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,9 @@
+package ba.bitcamp.w05d04.exercises.tasks;
+
+public class DesktopComputer {
+
+	private Integer spaceForRAM;
+	private Boolean isOverclock;
+	private Boolean hasOpticalDrive;
+
+}
