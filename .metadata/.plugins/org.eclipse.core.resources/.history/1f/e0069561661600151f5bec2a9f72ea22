@@ -1,0 +1,17 @@
+package ba.bitcamp.w05d05.lectures.thisandsuper;
+
+import java.util.Scanner;
+
+public class IgrajPogodiBroj {
+
+	public static void main(String[] args) {
+
+		Scanner in = new Scanner(System.in);
+
+		PogodiBroj.igrajLevelOne();
+
+		in.close();
+
+	}
+
+}
