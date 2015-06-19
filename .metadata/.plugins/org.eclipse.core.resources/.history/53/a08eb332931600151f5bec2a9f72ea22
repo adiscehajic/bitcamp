@@ -1,0 +1,31 @@
+package ba.bitcamp.w05d05.exercises;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Zebra z = new Zebra(true, 200, Animal.HERBIVORE, 20, Zebra.HEALTHY);
+		
+		System.out.println(z);
+		
+		Tiger t = new Tiger(true, 250, Animal.CARNIVORE, 70, Tiger.HUNTING);
+		Tiger t2 = new Tiger(true, 200, Animal.CARNIVORE, 75, Tiger.STANDSTILL);
+		
+		Plant p = new Plant(true, true, Plant.MID);
+		
+		z.eat(t);
+		
+		//System.out.println(z);
+		
+		
+//		System.out.println(t);
+//		
+//		t2.eat(z);
+//		
+//		System.out.println(t);
+		
+		
+		
+	}
+	
+}

@@ -19,6 +19,42 @@ public class Workstation extends StationaryComputer {
 	private Boolean hasECCMemory;
 
 	/**
+	 * Constructor
+	 * 
+	 * @param systemName
+	 * @param ram
+	 * @param price
+	 * @param processorSpeed
+	 * @param powerPSU
+	 * @param capacityHDD
+	 * @param numberOfDisplays
+	 * @param numberOfProcessorCores
+	 * @param hasECCMemory
+	 */
+	public Workstation(String systemName, Integer ram, Integer price,
+			Integer processorSpeed, Integer powerPSU, Integer capacityHDD,
+			Integer numberOfDisplays, Integer numberOfProcessorCores,
+			Boolean hasECCMemory) {
+		super(systemName, ram, price, processorSpeed, powerPSU, capacityHDD);
+		this.numberOfDisplays = numberOfDisplays;
+		this.numberOfProcessorCores = numberOfProcessorCores;
+		this.hasECCMemory = hasECCMemory;
+	}
+
+	/**
+	 * Prints information about workstation
+	 */
+	public void printInformation() {
+		super.printInformation();
+		String s = "";
+		s += "Number of displays: " + numberOfDisplays + "\n";
+		s += "Number of processor cores: " + numberOfProcessorCores + "\n";
+		s += "Has ECC memory: " + hasECCMemory + "\n";
+
+		System.out.println(s);
+	}
+
+	/**
 	 * Printing information about workstations.
 	 */
 	public void printTypeInfo() {

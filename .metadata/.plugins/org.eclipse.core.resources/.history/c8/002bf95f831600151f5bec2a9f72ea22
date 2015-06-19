@@ -1,0 +1,31 @@
+package ba.bitcamp.w05d05.exercises;
+
+public abstract class LifeForm {
+
+	/*
+	 * Declaring properties of lifeform
+	 */
+	private Boolean isAlive;
+
+	/**
+	 * Constructor
+	 * 
+	 * @param isAlive - Is the animal alive
+	 */
+	public LifeForm(Boolean isAlive) {
+		super();
+		this.isAlive = isAlive;
+	}
+
+	/*
+	 * Get and set methods
+	 */
+	public Boolean getIsAlive() {
+		return isAlive;
+	}
+
+	public void setIsAlive(Boolean isAlive) {
+		this.isAlive = isAlive;
+	}
+
+}

@@ -17,6 +17,41 @@ public class DesktopComputer extends StationaryComputer {
 	private Boolean hasOpticalDrive;
 
 	/**
+	 * Constructor
+	 * 
+	 * @param systemName
+	 * @param ram
+	 * @param price
+	 * @param processorSpeed
+	 * @param powerPSU
+	 * @param capacityHDD
+	 * @param spaceForRAM
+	 * @param isOverClock
+	 * @param hasOpticalDrive
+	 */
+	public DesktopComputer(String systemName, Integer ram, Integer price,
+			Integer processorSpeed, Integer powerPSU, Integer capacityHDD,
+			Integer spaceForRAM, Boolean isOverClock, Boolean hasOpticalDrive) {
+		super(systemName, ram, price, processorSpeed, powerPSU, capacityHDD);
+		this.spaceForRAM = spaceForRAM;
+		this.isOverclock = isOverClock;
+		this.hasOpticalDrive = hasOpticalDrive;
+	}
+
+	/**
+	 * Prints information about desktop computer
+	 */
+	public void printInformation() {
+		super.printInformation();
+		String s = "";
+		s += "Space for RAM: " + spaceForRAM + "\n";
+		s += "Overclock: " + isOverclock + "\n";
+		s += "Has optical drive: " + hasOpticalDrive + "\n";
+
+		System.out.println(s);
+	}
+
+	/**
 	 * Printing information about desktop computer.
 	 */
 	public void printTypeInfo() {

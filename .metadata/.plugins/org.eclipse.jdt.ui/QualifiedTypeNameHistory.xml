@@ -5,8 +5,20 @@
 <fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.tasks.StationaryComputer"/>
 <fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.tasks.PortableComputer"/>
 <fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.tasks.PersonalComputer"/>
-<fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.tasks.DesktopComputer"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w05d05.lectures.thisandsuper.PogodiBroj"/>
+<fullyQualifiedTypeName name="java.lang.Character"/>
+<fullyQualifiedTypeName name="task01.CampStringBuilder"/>
 <fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.tasks.Laptop"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.tasks.DesktopComputer"/>
 <fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.tasks.PocketPC"/>
 <fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.tasks.Workstation"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w05d05.exercises.Animal"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w05d05.exercises.LifeForm"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w05d05.exercises.Tiger"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w05d05.exercises.Plant"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w05d05.exercises.Zebra"/>
 </qualifiedTypeNameHistroy>

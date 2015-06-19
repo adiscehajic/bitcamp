@@ -1,0 +1,33 @@
+package ba.bitcamp.w05d05.exercises;
+
+public class Animal {
+
+	/*
+	 * Declaring constants of what animal eats
+	 */
+	public static final int CARNIVORE = 1;
+	public static final int HERBIVORE = 2;
+
+	/*
+	 * Declaring properties of animal
+	 */
+	private int weight;
+	private int eating;
+
+	public int getWeight() {
+		return weight;
+	}
+
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+
+	public int getEating() {
+		return eating;
+	}
+
+	public void setEating(int eating) {
+		this.eating = eating;
+	}
+
+}

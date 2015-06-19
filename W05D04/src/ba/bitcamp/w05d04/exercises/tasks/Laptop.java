@@ -17,6 +17,42 @@ public class Laptop extends PortableComputer {
 	private Boolean hasNumericalKeyboard;
 
 	/**
+	 * Constructor
+	 * 
+	 * @param systemName
+	 * @param ram
+	 * @param price
+	 * @param weigth
+	 * @param displaySize
+	 * @param hasWiFi
+	 * @param batteryCells
+	 * @param hasBluetooth
+	 * @param hasNumericalKeyboard
+	 */
+	public Laptop(String systemName, Integer ram, Integer price,
+			Integer weigth, Integer displaySize, Boolean hasWiFi,
+			Integer batteryCells, Boolean hasBluetooth,
+			Boolean hasNumericalKeyboard) {
+		super(systemName, ram, price, weigth, displaySize, hasWiFi);
+		this.batteryCells = batteryCells;
+		this.hasBluetooth = hasBluetooth;
+		this.hasNumericalKeyboard = hasNumericalKeyboard;
+	}
+
+	/**
+	 * Prints information about laptop
+	 */
+	public void printInformation() {
+		super.printInformation();
+		String s = "";
+		s += "Battery cells: " + batteryCells + "\n";
+		s += "Bluetooth: " + hasBluetooth + "\n";
+		s += "Numerical keyboard: " + hasNumericalKeyboard + "\n";
+
+		System.out.println(s);
+	}
+
+	/**
 	 * Printing information about laptop.
 	 */
 	public void printTypeInfo() {
