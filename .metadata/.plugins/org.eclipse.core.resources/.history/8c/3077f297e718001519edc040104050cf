@@ -1,0 +1,41 @@
+package ba.bitcamp.w06d01.exercises.interfacee.task03;
+
+public class Clock implements WriteableClock {
+
+	private int seconds;
+	private int minutes;
+	private int hours;
+
+	public Clock(int seconds, int minutes, int hours) {
+		super();
+		if (hours > 0 && hours < 23) {
+			this.hours = hours;
+		} else {
+			System.out.println("Inputed wrong hour format!");
+		}
+		if (minutes > 0 && minutes < 59) {
+			this.hours = hours;
+		} else {
+			System.out.println("Inputed wrong minute format!");
+		}
+		if (seconds > 0 && seconds < 59) {
+			this.hours = hours;
+		} else {
+			System.out.println("Inputed wrong second format!");
+		}
+	}
+
+	@Override
+	public void addToFile(String filename, int format) {
+		if (format == AMPM_FORMAT) {
+			String s = "";
+			if (hours > 12) {
+				s += (hours % 2) + ":" + minutes + ":" + seconds + "PM";  
+			} else {
+				s += hours + ":" + minutes + ":" + seconds + "AM";
+			}
+			writeToFile(filename, s);
+		}
+	}
+
+}

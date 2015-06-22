@@ -5,7 +5,6 @@
 <fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.tasks.StationaryComputer"/>
 <fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.tasks.PortableComputer"/>
 <fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.tasks.PersonalComputer"/>
-<fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
@@ -21,4 +20,23 @@
 <fullyQualifiedTypeName name="ba.bitcamp.w05d05.exercises.Tiger"/>
 <fullyQualifiedTypeName name="ba.bitcamp.w05d05.exercises.Plant"/>
 <fullyQualifiedTypeName name="ba.bitcamp.w05d05.exercises.Zebra"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w06d01.lectures.interfejs.Foo"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w06d01.lectures.interfejs.Bar"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+<fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ForegroundAction"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w06d01.lectures.nestedclass.OuterClass"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w06d01.lectures.interfejs.Compare"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w06d01.exercises.CampStringBuilder"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w06d01.exercises.interfacee.task01.Shape"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w06d01.exercises.interfacee.task01.Drawable"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w06d01.exercises.interfacee.task01.Line"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w06d01.exercises.interfacee.task01.Rectangle"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w06d01.exercises.interfacee.task03.WriteableClock"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w06d01.exercises.interfacee.task03.Clock"/>
+<fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w06d01.exercises.interfacee.task04.StringBuilderCamp.StringBuilderCampHelp"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w06d01.exercises.interfacee.task04.StringBuilderCamp"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,55 @@
+package ba.bitcamp.w06d01.exercises.interfacee.task04;
+
+public class StringBuilderCamp {
+
+		char[] array;
+
+		public StringBuilderCamp() {
+			super();
+			array = new char[0];
+		}
+		
+		
+	
+	static class StringBuilderCampHelp {
+		
+		/**
+		 * Increases an array for inputed number of elements.
+		 * @param number - A number of elements for which user wants to increas an
+		 */
+		public static char[] increase(char[] array, int number){
+		
+			char[] newChar = new char[array.length + number];
+			
+			array = newChar;
+			
+			return array;
+		}
+		
+		public static char[] offset(char[] array, String str, int position){
+			
+			char[] newChar = new char[array.length + str.length()];
+			
+			for (int i = 0; i < newChar.length; i++) {
+				if (i < position) {
+					newChar[i] = array[i];
+				} else {
+					newChar[i + position] = array[i]; 
+				}
+			}
+			
+			for (int i = position; i < position + str.length(); i++) {
+				newChar[i] = str.charAt(i - position);
+			}
+			
+			
+			
+			return array;
+		}
+		
+		
+		
+	}
+	
+	
+}

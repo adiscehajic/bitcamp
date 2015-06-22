@@ -1,0 +1,43 @@
+package ba.bitcamp.w06d01.exercises.interfacee.task01;
+
+public class Line implements Shape, Drawable {
+
+	private int length;
+
+	/**
+	 * Constructor
+	 * 
+	 * @param length
+	 */
+	public Line(int length) {
+		super();
+		this.length = length;
+	}
+
+	/*
+	 * Get and set methods
+	 */
+	public int getLength() {
+		return length;
+	}
+
+	public void setLength(int length) {
+		this.length = length;
+	}
+
+	@Override
+	public void drawOnConsole() {
+		System.out.println("*************");
+	}
+
+	@Override
+	public int getCircumference() {
+		return 0;
+	}
+
+	@Override
+	public int getArea() {
+		return 0;
+	}
+
+}

@@ -1,0 +1,57 @@
+package ba.bitcamp.w06d01.exercises.interfacee.task01;
+
+public class Rectangle implements Shape, Drawable {
+
+	private int width;
+	private int lenght;
+
+	/**
+	 * Constructor
+	 * 
+	 * @param width
+	 * @param lenght
+	 */
+	public Rectangle(int width, int lenght) {
+		super();
+		this.width = width;
+		this.lenght = lenght;
+	}
+
+	/*
+	 * Get and set methods
+	 */
+	public int getWidth() {
+		return width;
+	}
+
+	public void setWidth(int width) {
+		this.width = width;
+	}
+
+	public int getLenght() {
+		return lenght;
+	}
+
+	public void setLenght(int lenght) {
+		this.lenght = lenght;
+	}
+
+	@Override
+	public void drawOnConsole() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public int getCircumference() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}
