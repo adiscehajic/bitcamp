@@ -1,0 +1,111 @@
+package ba.bitcamp.w06d03.lectures.gui;
+
+import java.awt.*;
+import java.awt.event.*;
+
+import javax.swing.*;
+
+import ba.bitcamp.w06d03.lectures.gui.HelloWorldGUI2.ButtonHandler;
+
+public class ticTacToeGUI {
+
+	private static class HelloWorldDisplay extends JPanel {
+
+		public void paintComponent(Graphics g) {
+			super.paintComponent(g);
+			// g.drawString("Hello World!", 20, 40);
+		}
+	}
+
+	public static class ButtonHandler2 implements ActionListener {
+		JButton button;
+
+		public ButtonHandler2(JButton button) {
+			super();
+			this.button = button;
+		}
+
+		public void actionPerformed(ActionEvent e) {
+
+			String buttonText;
+
+			if (button.getText() == "") {
+				buttonText = "X";
+				button.setText(buttonText);
+			} else if (button.getText() == "X") {
+				buttonText = "O";
+				button.setText(buttonText);
+			} else {
+				buttonText = "X";
+				button.setText(buttonText);
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+
+		HelloWorldDisplay displayPanel = new HelloWorldDisplay();
+
+		JPanel content = new JPanel();
+		content.setLayout(new GridLayout(3, 3));
+		
+		
+		JButton okButton1 = new JButton("");
+		okButton1.addActionListener(new ButtonHandler2(okButton1));
+		
+		JButton okButton2 = new JButton();
+		okButton2.addActionListener(new ButtonHandler2(okButton2));
+		
+		JButton okButton3 = new JButton();
+		okButton3.addActionListener(new ButtonHandler2(okButton3));
+		
+//		JButton okButton4 = new JButton();
+//		okButton4.addActionListener(listener);
+//		
+//		JButton okButton5 = new JButton();
+//		okButton5.addActionListener(listener);
+//		
+//		JButton okButton6 = new JButton();
+//		okButton6.addActionListener(listener);
+//		
+//		JButton okButton7 = new JButton();
+//		okButton7.addActionListener(listener);
+//		
+//		JButton okButton8 = new JButton();
+//		okButton8.addActionListener(listener);
+//		
+//		JButton okButton9 = new JButton();
+//		okButton9.addActionListener(listener);
+		
+		content.add(okButton1);
+		content.add(okButton2);
+		content.add(okButton3);
+//		content.add(okButton4);
+//		content.add(okButton5);
+//		content.add(okButton6);
+//		content.add(okButton7);
+//		content.add(okButton8);
+//		content.add(okButton9);
+//		
+//		okButton1.addActionListener(listener);
+//		okButton2.addActionListener(listener);
+//		okButton3.addActionListener(listener);
+//		okButton4.addActionListener(listener);
+//		okButton5.addActionListener(listener);
+//		okButton6.addActionListener(listener);
+//		okButton7.addActionListener(listener);
+//		okButton8.addActionListener(listener);
+//		okButton9.addActionListener(listener);
+		
+
+		
+		
+		JFrame window = new JFrame("GUI Test");
+		window.setContentPane(content);
+		window.setSize(250, 100);
+		window.setLocation(850, 500);
+		window.setVisible(true);
+
+	}
+
+}
