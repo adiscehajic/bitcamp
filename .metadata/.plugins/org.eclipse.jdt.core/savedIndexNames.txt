@@ -1,7 +1,0 @@
-INDEX VERSION 1.127+/Users/adis.cehajic/Desktop/bitcamp/.metadata/.plugins/org.eclipse.jdt.core
-765512093.index
-285028532.index
-2675468946.index
-1936734863.index
-1520957707.index
-947429994.index
