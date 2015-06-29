@@ -1,0 +1,113 @@
+package ba.bitcamp.homeworkWeekend6.task04;
+
+import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Random;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Task04 extends JFrame {
+
+	JButton buttonLeft = new JButton("<");
+	JButton buttonRight = new JButton(">");
+	JButton buttonInsert = new JButton("Insert");
+	JButton buttonCharacter = new JButton("Char: ");
+	JLabel label = new JLabel("_");
+
+	private static String labelText = "";
+	
+	Random rand = new Random();
+
+	public Task04() {
+
+		setLayout(new BorderLayout());
+
+		add(buttonLeft, BorderLayout.WEST);
+		add(buttonRight, BorderLayout.EAST);
+		add(buttonInsert, BorderLayout.SOUTH);
+		add(buttonCharacter, BorderLayout.NORTH);
+		label.setHorizontalAlignment(JLabel.CENTER);
+		add(label);
+
+		buttonCharacter.addActionListener(new Action());
+		buttonInsert.addActionListener(new Action());
+		buttonLeft.addActionListener(new Action());
+		
+		// Setting the frame
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setLocation(500, 300);
+		setTitle("Task 4");
+		setSize(400, 200);
+	}
+
+	public static void main(String[] args) {
+		new Task04();
+	}
+
+	private class Action implements ActionListener {
+
+		int min = 97;
+		int max = 122;
+		private int counter = -1;
+		
+		
+		public void actionPerformed(ActionEvent e) {
+
+			for (int i = 0; i < label.getText().length(); i++) {
+				if (label.getText().charAt(i) == '_') {
+					counter = i;
+				}
+			}
+
+			if (e.getSource() == buttonCharacter) {
+				buttonCharacter.setText("Char: "
+						+ (char) (rand.nextInt((max - min) + 1) + min));
+			} else if (e.getSource() == buttonInsert) {
+				if (counter > 0) {
+					label.setText(label.getText().substring(0, counter)
+							+ buttonCharacter.getText().charAt(6)
+							+ "_"
+							+ label.getText().substring(counter + 1,
+									label.getText().length()));
+					labelText = label.getText();
+				} else {
+					label.setText(buttonCharacter.getText().charAt(6)
+							+ "_"
+							+ label.getText().substring(counter + 1,
+									label.getText().length()));
+					labelText = label.getText();
+				}
+			} else if (e.getSource() == buttonLeft) {
+				System.out.println(labelText);
+				if (counter == labelText.length() - 1) {
+					System.out.println(counter);
+					System.out.println(labelText.length() - 1);
+					label.setText(labelText.substring(0, counter - 1)
+							+ "_"
+							+ labelText.charAt(labelText.length() - 2));
+					labelText = label.getText();
+				} else if (counter > 0) {
+					System.out.println(counter);
+					label.setText(labelText.substring(0, counter)
+							+ "_"
+							+ labelText.substring(counter + 1,
+									labelText.length()));
+					labelText = label.getText();
+				} 
+			}else if (e.getSource() == buttonRight) {
+				if (counter < label.getText().length() - 1) {
+					label.setText(labelText.substring(0, counter + 1) + "_"
+							+ labelText.substring(counter + 2, labelText.length()));
+					labelText = label.getText();
+				}
+			}
+
+		}
+
+	}
+
+}

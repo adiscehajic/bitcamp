@@ -1,0 +1,32 @@
+package ba.bitcamp.homeworkWeekend6.task01;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+
+public class Main extends JFrame {
+
+	private static final long serialVersionUID = -4271314583804769289L;
+
+
+	public static void main(String[] args) {
+		
+	}
+	
+	
+	public class Action implements ActionListener {
+
+
+		public void actionPerformed(ActionEvent arg0) {
+			
+			
+		}
+		
+		
+		
+		
+	}
+	
+	
+}

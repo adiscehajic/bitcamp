@@ -1,0 +1,19 @@
+package ba.bitcamp.homeworkWeekend6.task06;
+
+public class Task06 {
+
+	public static void main(String[] args) {
+		
+		
+	}
+	
+	
+	public void fillArray(int[][] matrix){
+		fillArray(matrix, 0, 0, 0);
+	}
+	
+	public void fillArray(int[][] matrix, int i, int j, int number){
+		
+	}
+	
+}

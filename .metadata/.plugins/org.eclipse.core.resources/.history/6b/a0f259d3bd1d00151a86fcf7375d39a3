@@ -1,0 +1,71 @@
+package ba.bitcamp.homeworkWeekend6.task04;
+
+import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Random;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Task04 extends JFrame {
+
+	private static final long serialVersionUID = 2020835413670208737L;
+	private static String labelText = "_";
+	
+	JButton buttonLeft = new JButton("<");
+	JButton buttonRight = new JButton(">");
+	JButton buttonInsert = new JButton("Insert");
+	JButton buttonCharacter = new JButton("");
+	JLabel label = new JLabel(labelText);
+
+	
+	
+	Random rand = new Random();
+	
+	String abeceda = "abcdefgh";
+	
+	public Task04() {
+
+		setLayout(new BorderLayout());
+		
+		add(buttonLeft, BorderLayout.WEST);
+		add(buttonRight, BorderLayout.EAST);
+		add(buttonInsert, BorderLayout.SOUTH);
+		add(buttonCharacter, BorderLayout.NORTH);
+		label.setHorizontalAlignment(JLabel.CENTER);
+		add(label);
+		
+		buttonCharacter.addActionListener(new Action());
+		buttonInsert.addActionListener(new Action());
+		
+		// Setting the frame
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setLocation(450, 300);
+		setTitle("Task 3");
+		setSize(400, 200);
+	}
+
+	public static void main(String[] args) {
+		new Task04();
+	}
+
+	private class Action implements ActionListener {
+
+		public void actionPerformed(ActionEvent e) {
+			String character = "" + abeceda.charAt(rand.nextInt(abeceda.length()));
+			if (e.getSource() == buttonCharacter) {
+				
+				buttonCharacter.setText("" + abeceda.charAt(rand.nextInt(abeceda.length())));
+			} else if (e.getSource() == buttonInsert) {
+				labelText += buttonCharacter.getText();
+				label.setText(labelText);
+			}
+			
+		}
+
+	}
+
+}

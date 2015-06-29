@@ -7,9 +7,7 @@
 <fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.tasks.PersonalComputer"/>
 <fullyQualifiedTypeName name="javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="ba.bitcamp.w05d05.lectures.thisandsuper.PogodiBroj"/>
-<fullyQualifiedTypeName name="java.lang.Character"/>
 <fullyQualifiedTypeName name="task01.CampStringBuilder"/>
 <fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.tasks.Laptop"/>
 <fullyQualifiedTypeName name="ba.bitcamp.w05d04.exercises.tasks.DesktopComputer"/>
@@ -31,7 +29,6 @@
 <fullyQualifiedTypeName name="ba.bitcamp.w06d01.exercises.interfacee.task01.Shape"/>
 <fullyQualifiedTypeName name="ba.bitcamp.w06d01.exercises.interfacee.task01.Drawable"/>
 <fullyQualifiedTypeName name="ba.bitcamp.w06d01.exercises.interfacee.task01.Line"/>
-<fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="ba.bitcamp.w06d01.exercises.interfacee.task01.Rectangle"/>
 <fullyQualifiedTypeName name="ba.bitcamp.w06d01.exercises.interfacee.task03.WriteableClock"/>
 <fullyQualifiedTypeName name="ba.bitcamp.w06d01.exercises.interfacee.task03.Clock"/>
@@ -39,4 +36,17 @@
 <fullyQualifiedTypeName name="ba.bitcamp.w06d01.exercises.interfacee.task04.StringBuilderCamp.StringBuilderCampHelp"/>
 <fullyQualifiedTypeName name="ba.bitcamp.w06d01.exercises.interfacee.task04.StringBuilderCamp"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="ba.bitcamp.w06d03.exercises.Task5.Action"/>
+<fullyQualifiedTypeName name="javax.swing.JFrame"/>
+<fullyQualifiedTypeName name="javax.swing.JButton"/>
+<fullyQualifiedTypeName name="ba.bitcamp.homeworkWeekend6.task04.Task04"/>
+<fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+<fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.lang.Character"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="javax.swing.JLabel"/>
+<fullyQualifiedTypeName name="ba.bitcamp.homeworkWeekend6.task04.Task04.Action"/>
+<fullyQualifiedTypeName name="javax.swing.Box.Filler"/>
 </qualifiedTypeNameHistroy>

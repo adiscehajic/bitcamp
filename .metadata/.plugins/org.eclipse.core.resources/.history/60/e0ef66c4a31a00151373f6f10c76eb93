@@ -1,0 +1,93 @@
+package ba.bitcamp.w06d03.exercises;
+
+import java.awt.BorderLayout;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Task5 extends JFrame {
+
+	private static final long serialVersionUID = -8657462107452841065L;
+
+	private JButton button1 = new JButton("Remove");
+	private JButton button2 = new JButton("<");
+	private JButton button3 = new JButton(">");
+	private JLabel label = new JLabel();
+	private String s = "Example Sentence";
+
+	public Task5() {
+
+		setLayout(new BorderLayout());
+
+		add(label);
+		label.setHorizontalAlignment(JLabel.CENTER);
+		label.setFont(new Font("Calibri", Font.PLAIN, 18));
+		label.setText("_" + s.substring(1, s.length()));
+
+		add(button1, BorderLayout.SOUTH);
+		add(button2, BorderLayout.WEST);
+		add(button3, BorderLayout.EAST);
+
+		button2.addActionListener(new Action());
+		button3.addActionListener(new Action());
+
+		setVisible(true);
+		setSize(500, 300);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setTitle("Task 4");
+		setLocationRelativeTo(null);
+
+	}
+
+	public static void main(String[] args) {
+		new Task5();
+	}
+
+	private class Action implements ActionListener {
+		private int counter;
+		
+		public void actionPerformed(ActionEvent e) {
+			
+			for (int i = 0; i < s.length(); i++) {
+				if (label.getText().charAt(i) == '_') {
+					counter = i;
+				}
+			}
+
+			if (e.getSource() == button2) {
+//				for (int i = 0; i < s.length(); i++) {
+//					if (label.getText().charAt(i) == '_') {
+//						counter = i;
+//					}
+//				}
+				
+				if (counter > 0) {
+					label.setText(s.substring(0, counter - 1) + "_"
+							+ s.substring(counter, s.length()));
+				}
+				//counter = 0;
+			} else if (e.getSource() == button3) {
+//				for (int i = 0; i < s.length(); i++) {
+//					if (s.charAt(i) == '_') {
+//						counter = i;
+//					}
+//				}
+				
+				if (counter < label.getText().length()) {
+					label.setText(s.substring(0, counter + 1) + "_"
+							+ s.substring(counter + 2, s.length()));
+				}
+				//counter = 0;
+			}
+
+			
+
+		}
+
+	}
+
+}

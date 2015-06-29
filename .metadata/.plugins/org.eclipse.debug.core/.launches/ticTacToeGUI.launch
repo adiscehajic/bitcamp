@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/W06D03/src/ba/bitcamp/w06d03/lectures/gui/ticTacToeGUI.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="ba.bitcamp.w06d03.lectures.gui.ticTacToeGUI"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="W06D03"/>
+</launchConfiguration>

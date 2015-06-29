@@ -1,0 +1,46 @@
+package ba.bitcamp.homeworkWeekend6.task01;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+
+public class Task01 extends JFrame {
+
+	private static final long serialVersionUID = -4271314583804769289L;
+
+	
+	
+	public Task01() {
+		
+		
+		
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setLocationRelativeTo(null);
+		setSize(600, 50);
+		setTitle("Task01");
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		new Task01();
+		
+	}
+	
+	
+	public class Action implements ActionListener {
+
+
+		public void actionPerformed(ActionEvent arg0) {
+			
+			
+		}
+		
+		
+	}
+	
+	
+}

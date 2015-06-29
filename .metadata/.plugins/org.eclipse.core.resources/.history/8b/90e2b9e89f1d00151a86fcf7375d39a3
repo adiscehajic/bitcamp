@@ -1,0 +1,44 @@
+package ba.bitcamp.homeworkWeekend6.task02;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+
+public class Task02 extends JFrame {
+
+	private static final long serialVersionUID = 6579172959932296051L;
+
+	JButton button1 = new JButton("First name");
+	JButton button2 = new JButton("Last name");
+	JLabel label1 = new JLabel("First");
+	JLabel label2 = new JLabel("Last");
+
+	public Task02() {
+
+		setLayout(new BorderLayout());
+
+		add(button1, BorderLayout.WEST);
+		add(button2, BorderLayout.EAST);
+	    label1.setHorizontalAlignment(JLabel.RIGHT);
+	    label1.setVerticalAlignment(JLabel.CENTER);
+	    label2.setHorizontalAlignment(JLabel.LEFT);
+	    label2.setVerticalAlignment(JLabel.CENTER);
+		add(label1);
+		//add(label2);
+		
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(500, 200);
+		setLocationRelativeTo(null);
+		setTitle("Task 2");
+
+	}
+
+	public static void main(String[] args) {
+		new Task02();
+	}
+
+}

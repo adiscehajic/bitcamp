@@ -1,0 +1,103 @@
+package ba.bitcamp.homeworkWeekend6.task02;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class Task02 extends JFrame {
+
+	private static final long serialVersionUID = 6579172959932296051L;
+
+	JButton button1 = new JButton("First name");
+	JButton button2 = new JButton("Last name");
+	JLabel label1 = new JLabel("First ");
+	JLabel label2 = new JLabel(" Last");
+
+	private static String label1Text = "";
+	private static String label2Text = "";
+
+	private static int counterName = 0;
+
+	public Task02() {
+
+		setLayout(new BorderLayout());
+
+		add(button1, BorderLayout.WEST);
+		add(button2, BorderLayout.EAST);
+		label1.setHorizontalAlignment(JLabel.RIGHT);
+		label1.setVerticalAlignment(JLabel.CENTER);
+		label2.setHorizontalAlignment(JLabel.LEFT);
+		label2.setVerticalAlignment(JLabel.CENTER);
+		JPanel p = new JPanel(new GridLayout(1, 2));
+		p.add(label1);
+		p.add(label2);
+
+		add(p, BorderLayout.CENTER);
+
+		button1.addActionListener(new Action());
+
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(500, 200);
+		setLocationRelativeTo(null);
+		setTitle("Task 2");
+
+	}
+
+	public static void main(String[] args) {
+		new Task02();
+	}
+
+	private class Action implements ActionListener {
+
+		Name n = new Name();
+
+		public void actionPerformed(ActionEvent e) {
+			if (e.getSource() == button1) {
+				label1.setText(n.generateName());
+				counterName++;
+			}
+
+		}
+
+	}
+
+	private static class Name {
+
+		private String[] names = { "Adis ", "Gordan ", "Kerim ", "Zeljko ",
+				"Zaid ", "Ajla ", "Medina ", "Mladen " };
+
+		public String generateName() {
+
+			if (counterName == names.length) {
+				counterName = 0;
+			}
+
+			for (int i = 0; i < names.length; i++) {
+				if (i == counterName) {
+					label1Text = names[i];
+				}
+			}
+
+			return label1Text;
+
+		}
+
+//		public String toString() {
+//			return String.format("%s", generateName());
+//		}
+	}
+
+	private class Surname {
+
+	}
+
+}

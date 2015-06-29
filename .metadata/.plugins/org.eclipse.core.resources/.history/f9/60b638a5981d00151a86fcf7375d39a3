@@ -1,0 +1,67 @@
+package ba.bitcamp.homeworkWeekend6.task01;
+
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class Task01 extends JFrame {
+
+	private static final long serialVersionUID = -4271314583804769289L;
+
+	JButton button1 = new JButton("1");
+	JButton button2 = new JButton("2");
+	JButton button3 = new JButton("3");
+	JButton button4 = new JButton("4");
+	JButton button5 = new JButton("5");
+	JButton button6 = new JButton("6");
+	JButton button7 = new JButton("7");
+	JButton button8 = new JButton("8");
+	JButton button9 = new JButton("9");
+	
+	
+	public Task01() {
+		
+		setLayout(new GridLayout(9, 1));
+		
+		add(button1);
+		add(button2);
+		add(button3);
+		add(button4);
+		add(button5);
+		add(button6);
+		add(button7);
+		add(button8);
+		add(button9);
+		
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setLocationRelativeTo(null);
+		setSize(150, 500);
+		setTitle("Task01");
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		new Task01();
+		
+	}
+	
+	
+	public class Action implements ActionListener {
+
+
+		public void actionPerformed(ActionEvent arg0) {
+			
+			
+		}
+		
+		
+	}
+	
+	
+}

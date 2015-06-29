@@ -1,0 +1,58 @@
+package ba.bitcamp.homeworkWeekend6.task06;
+
+public class Task06 {
+
+	public static void main(String[] args) {
+		int[][] matrix = new int[6][2];
+
+		fillArray(matrix);
+
+		for (int i = 0; i < matrix.length; i++) {
+			for (int j = 0; j < matrix[i].length; j++) {
+				System.out.print(matrix[i][j] + " ");
+			}
+			System.out.println();
+		}
+
+	}
+
+	/**
+	 * Inputs the values in the matrix
+	 * 
+	 * @param matrix
+	 *            - Matrix in which user want to input values.
+	 */
+	public static void fillArray(int[][] matrix) {
+		fillArray(matrix, 0, 0, 0);
+	}
+
+	/**
+	 * Inputs the values in the matrix from inputed row and column and from
+	 * inputed number value.
+	 * 
+	 * @param matrix
+	 *            - Matrix in which user want to input values.
+	 * @param i
+	 *            - Number of row from which input starts.
+	 * @param j
+	 *            - Number of column from which input starts.
+	 * @param number
+	 *            - Number from which input starts
+	 */
+	public static void fillArray(int[][] matrix, int i, int j, int number) {
+		if (i == matrix.length || j == matrix[i].length) {
+			return;
+		}
+
+		matrix[i][j] = number;
+
+		fillArray(matrix, i, j + 1, number + 1);
+
+		number += matrix[0].length;
+
+		fillArray(matrix, i + 1, j, number);
+
+		return;
+	}
+
+}

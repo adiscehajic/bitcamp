@@ -1,0 +1,88 @@
+package ba.bitcamp.homeworkWeekend6.task01;
+
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+public class Task01 extends JFrame {
+
+	private static final long serialVersionUID = -4271314583804769289L;
+
+	JButton button1 = new JButton("1");
+	JButton button2 = new JButton("2");
+	JButton button3 = new JButton("3");
+	JButton button4 = new JButton("4");
+	JButton button5 = new JButton("5");
+	JButton button6 = new JButton("6");
+	JButton button7 = new JButton("7");
+	JButton button8 = new JButton("8");
+	JButton button9 = new JButton("9");
+
+	private static int counter = 0;
+	private static String label = "";
+	
+	JButton[] jbuttonArray = new JButton[] { button1, button2, button3,
+			button4, button5, button6, button7, button8, button9 };
+
+	public Task01() {
+
+		setLayout(new GridLayout(9, 1));
+
+		add(button1);
+		add(button2);
+		add(button3);
+		add(button4);
+		add(button5);
+		add(button6);
+		add(button7);
+		add(button8);
+		add(button9);
+		
+		button1.addActionListener(new Action());
+		button2.addActionListener(new Action());
+		button3.addActionListener(new Action());
+		button4.addActionListener(new Action());
+		button5.addActionListener(new Action());
+		button6.addActionListener(new Action());
+		button7.addActionListener(new Action());
+		button8.addActionListener(new Action());
+		button9.addActionListener(new Action());
+
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setLocationRelativeTo(300, 200);
+		setSize(150, 500);
+		setTitle("Task 1");
+
+	}
+
+	public static void main(String[] args) {
+		new Task01();
+	}
+
+	public class Action implements ActionListener {
+
+		public void actionPerformed(ActionEvent e) {
+		
+			for (int i = 0; i < jbuttonArray.length; i++) {
+				if (e.getSource() == jbuttonArray[i] && counter < 3) {
+					jbuttonArray[i].setEnabled(false);
+					label += jbuttonArray[i].getText();
+					counter++;
+				}
+			}
+			
+			if (counter == 3) {
+				JOptionPane.showMessageDialog(null, label);
+				System.exit(0);
+			}
+
+		}
+
+	}
+
+}
