@@ -8,7 +8,10 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.image.BufferedImage;
+import java.io.File;
 
+import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
@@ -22,17 +25,31 @@ public class FlappyBlock extends JPanel implements ActionListener {
 	private Block mainBlock;
 	private Obstacles firstObstacle;
 	private Obstacles secondObstacle;
+	
+	private Obstacles thirdObstacle;
+	private Obstacles fourthObstacle;
 
 	private Timer timer;
 	private Timer timerObstacle;
+	
+	private BufferedImage image;
 
 	public FlappyBlock(int width, int height) {
+		try{
+		image = ImageIO.read(new File("src\\images.jpg"));
+		 } catch (Exception ex) {
+	            System.out.println("Greska");
+	       }
+		
 		this.gameWidth = width;
 		this.gameHeight = height;
 
 		mainBlock = new Block(75, height / 2);
-		firstObstacle = new Obstacles(width, height);
-		secondObstacle = new Obstacles((width * 2) + 150, height);
+		firstObstacle = new Obstacles(width + 150, height - 250, width, height, 150, false);
+		secondObstacle = new Obstacles(width + 700, height - 200, width, height, 150, false);
+		
+		thirdObstacle = new Obstacles(width + 150, 0, width, height, 150, true);
+		fourthObstacle = new Obstacles(width + 700, 0, width, height, 150, true);
 		
 		addKeyListener(new KeyAdapter() {
 			public void keyPressed(KeyEvent e) {
@@ -69,15 +86,20 @@ public class FlappyBlock extends JPanel implements ActionListener {
 
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
+		g.drawImage(image, 0, 0, null);
 		mainBlock.draw(g);
 		firstObstacle.draw(g);
 		secondObstacle.draw(g);
+		thirdObstacle.draw(g);
+		fourthObstacle.draw(g);
 	}
 
 	public void actionPerformed(ActionEvent e) {
 		mainBlock.down();
 		firstObstacle.move();
 		secondObstacle.move();
+		thirdObstacle.move();
+		fourthObstacle.move();
 		repaint();
 	}
 
