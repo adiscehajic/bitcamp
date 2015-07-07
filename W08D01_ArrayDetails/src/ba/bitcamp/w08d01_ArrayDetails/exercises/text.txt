@@ -1,0 +1,66 @@
+Name: Adis
+Email: adis.mail
+Comment: 
+Pravo je dobar.
+
+Name: Neko
+Email: neko.mail
+Comment: 
+Ma bas je dobar.
+
+Name: Zaid
+Email: zaid.mail
+Comment: 
+Ma nekako mi nije.
+Name: Gordan
+Email: gordan.mail
+Comment: 
+Ma meni je bas nekako ono.
+
+
+Name: sadasd
+Email: asdasd
+Comment: 
+asdsadasdasdas
+
+
+Name: sadas
+Email: asdasd
+Comment: 
+
+
+Name: saddsa
+Email: 
+Comment: 
+
+
+Name: asdasd
+Email: 
+Comment: 
+
+
+Name: Adis
+Email: adis.cehajic@bitcamp.ba
+Comment: 
+Pravo je dobar
+
+Name: Babo
+Email: 
+Comment: 
+sdsadads
+
+Name: Babo
+Email: babo@bitacmp.ba
+Comment: 
+Bas je cool.
+
+Name: fsdfsdf
+Email: sadasd@sdsd.ds
+Comment: 
+sadasdasd
+
+Name: sadads
+Email: dfds@dasdsa.sd
+Comment: 
+sdasasd
+

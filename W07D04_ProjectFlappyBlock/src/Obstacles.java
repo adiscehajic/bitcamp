@@ -3,13 +3,12 @@ import java.awt.Graphics;
 
 public class Obstacles {
 
-	private int x;
-	private int y;
+	public int x;
+	public int y;
 	private int gameWidth;
 	private int gameHeight;
 	private int obstacleHeigth = 100 + (int) (Math.random() * 200);
 	private int resetPosition;
-	private Color color;
 	
 	private boolean isUp;
 
@@ -21,10 +20,9 @@ public class Obstacles {
 		this.gameHeight = gameHeight;
 		this.resetPosition = resetPosition;
 		this.isUp = isUp;
-		// resetPosition();
 	}
 
-	public void resetPosition() {
+	public void resetObstaclePosition() {
 		if (isUp) {
 			x = gameWidth + resetPosition;
 			y = 0;
@@ -39,14 +37,27 @@ public class Obstacles {
 			x -= 5;
 		} else {
 			obstacleHeigth = 100 + (int) (Math.random() * 200);
-			resetPosition();
+			
+			resetObstaclePosition();
 		}
 	}
 
 	public void draw(Graphics g) {
-		System.out.println(obstacleHeigth);
-		g.setColor(Color.LIGHT_GRAY);
-		g.fillRect(x, y, 150, obstacleHeigth);
+
+		int o = obstacleHeigth;
+
+		if (isUp) {
+			g.setColor(new Color(44, 176, 48));
+			System.out.println(o);
+			g.fill3DRect(x, y, 150, gameHeight - o - 200, true);
+			//g.fillRect(x, y, 150, gameHeight - o - 200);
+		} else {
+			g.setColor(new Color(44, 176, 48));
+			System.out.println(o);
+			g.fill3DRect(x, y, 150, o, true);
+			//g.fillRect(x, y, 150, o);
+		}
+
 	}
 
 }
