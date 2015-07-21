@@ -1,0 +1,1 @@
+Neki string koji se nalazi u fileu.Hello World!
