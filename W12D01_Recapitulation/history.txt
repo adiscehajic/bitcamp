@@ -1,0 +1,7 @@
+Primes count: 78501
+Time (s): 37
+End of main!
+
+Primes count: 78496
+Time (s): 35
+End of main!
