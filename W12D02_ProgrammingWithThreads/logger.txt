@@ -1,0 +1,18 @@
+Tue Aug 04 16:29:11 CEST 2015 [PRESSURE] 125 hPa
+Tue Aug 04 16:29:21 CEST 2015 [TEMPERATURE] 25 K
+Tue Aug 04 16:29:31 CEST 2015 [COMMAND ERROR] Sent message does not contain right informations.
+Tue Aug 04 16:42:38 CEST 2015 [COMMAND ERROR] Hello is not a valid communication identification number.
+Tue Aug 04 16:43:09 CEST 2015 [COMMAND ERROR] Hello is not a valid communication identification number.
+Tue Aug 04 16:44:14 CEST 2015 [COMMAND ERROR] 'Hello' is not a valid communication identification number.
+Tue Aug 04 16:45:38 CEST 2015 [COMMAND ERROR] 'Hello' is not a valid communication identification number.
+Tue Aug 04 16:48:40 CEST 2015 [COMMAND ERROR] 'Hello' is not a valid communication identification number.
+Tue Aug 04 16:49:51 CEST 2015 [MOVEMENT] false
+Tue Aug 04 16:51:31 CEST 2015 [COMMAND ERROR] 'Hello' is not a valid communication identification number.
+Tue Aug 04 16:53:56 CEST 2015 [COMMAND ERROR] 'Hello' is not a information format.
+Tue Aug 04 16:54:06 CEST 2015 [ERROR] Hello
+Tue Aug 04 16:54:06 CEST 2015 [COMMAND ERROR] 'Hello' is not a information format.
+Tue Aug 04 16:54:33 CEST 2015 [ERROR] Hello
+Tue Aug 04 16:54:50 CEST 2015 [COMMAND ERROR] 'Hello' is not a information format.
+Tue Aug 04 16:56:02 CEST 2015 [COMMAND ERROR] 'Hello' is not a valid communication identification number.
+Tue Aug 04 16:56:35 CEST 2015 [COMMAND ERROR] '5' is not a valid communication identification number.
+Tue Aug 04 17:18:29 CEST 2015 [ERROR] Hello world
