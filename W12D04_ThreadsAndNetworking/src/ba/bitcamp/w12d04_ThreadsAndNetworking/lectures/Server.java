@@ -14,6 +14,7 @@ public class Server {
 	private static LinkedBlockingQueue<Client> clients;
 	private static LinkedBlockingQueue<Message> messages;
 	private static ExecutorService pool = Executors.newFixedThreadPool(8);
+	private static Object lock = new Object();
 
 	public static void main(String[] args) {
 		clients = new LinkedBlockingQueue<Client>();
@@ -26,7 +27,7 @@ public class Server {
 		pool.submit(new Sender());
 		pool.submit(new Sender());
 		pool.submit(new Sender());
-		
+
 		try {
 			ServerSocket server = new ServerSocket(6815);
 			Socket client;
@@ -46,14 +47,10 @@ public class Server {
 
 		@Override
 		public void run() {
+			Client c = null;
 			try {
-				Client c = null;
-				synchronized(clients){
 				c = clients.take();
-				clients.add(c);
-				}
 				BufferedReader reader = c.getReader();
-
 				StringBuilder st = new StringBuilder();
 
 				while (reader.ready()) {
@@ -61,11 +58,14 @@ public class Server {
 					Message message = new Message(c.getId(), st.toString());
 					messages.add(message);
 				}
-
-				pool.execute(this);
+				// klienta vratimo na kraju kako je i trebalo biti
+				clients.add(c);
 			} catch (InterruptedException | IOException e) {
+				clients.remove(c);
 				e.printStackTrace();
 			}
+			// bilo unutar try pa nam se pool vremenom isprazni
+			pool.execute(this);
 		}
 	}
 
@@ -76,24 +76,22 @@ public class Server {
 			try {
 				Message m = messages.take();
 				Client[] clientArr = null;
-
-				synchronized (clients) {
+				synchronized (lock) {
 					clientArr = new Client[clients.size()];
 					for (int i = 0; i < clientArr.length; i++) {
 						clientArr[i] = clients.take();
 						clients.add(clientArr[i]);
 					}
 				}
-
 				for (int i = 0; i < clientArr.length; i++) {
 					BufferedWriter writer = clientArr[i].getWriter();
 					writer.write(m.getMessage());
 					writer.flush();
 				}
-				pool.execute(this);
 			} catch (InterruptedException | IOException e) {
 				e.printStackTrace();
 			}
+			pool.execute(this);
 
 		}
 
